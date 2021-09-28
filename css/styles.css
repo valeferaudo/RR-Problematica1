@@ -1,18 +1,16 @@
 article {
-    float: left;
-    width: 75%;
-    margin-top: 10px;
-    box-sizing: border-box;
+    width: 100%;
 }
-aside {
-    float: left;
-    width: 25%;
-    height: 100%;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
+main{
+    width: 70%;
+    margin: auto;
 }
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 h1 {
     margin-top: 15px;
     margin-bottom: 5px;
@@ -49,10 +47,24 @@ footer {
     color: white;
     text-align: center;
 }
-.header-box{
-    height: 35px;
-    width: 100%;
-    background-color: #E2F3D1;
+.header-title{
+    padding-right: 15%;
+    padding-left: 15%;
+}
+main .left-column{
+    float: left;
+    width: 75%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+main .right-column{
+    float: left;
+    width: 25%;
+    height: 100%;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 .container {
     width: 70%;
@@ -91,14 +103,14 @@ footer {
     clear: both;
     display: table;
 }
-.left-arrow{
+article .carousel-container .left-arrow{
     float: left;
     width: 5%;
     box-sizing: border-box;
     font-size: 50px;
     text-align: center;
 }
-.right-arrow{
+article .carousel-container .right-arrow{
     float: right;
     width: 5%;
     top: 50%;
@@ -212,6 +224,9 @@ footer {
 }
 .mt-0 {
     margin-top: 0px;
+}
+.mt-1{
+    margin-top: 10px;
 }
 .mt-2{
     margin-top: 20px;
