@@ -21,7 +21,6 @@ h1 {
     font-size: 40px;
     font-weight: bold;
     line-height: 1.15;
-    font-weight: 700;
 }
 body {
     font-family: Helvetica, Helvetica, Arial, sans-serif;
@@ -55,11 +54,14 @@ footer {
     width: 100%;
     background-color: #E2F3D1;
 }
-
 .container {
     width: 70%;
-    height: 100%;
     margin: auto;
+}
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 .subtitle {
     margin-top: 0;
@@ -83,6 +85,11 @@ footer {
 }
 .carousel-container{
     width: 100%;
+}
+.carousel-container::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 .left-arrow{
     float: left;
@@ -196,10 +203,13 @@ footer {
     height: 70%;
     width: 70%;
 }
-.mt-2{
-    margin-top: 20px;
-}
 .tab{
     list-style-position: inside;
     padding-left: 0px;
+}
+.mt-0 {
+    margin-top: 0px;
+}
+.mt-2{
+    margin-top: 20px;
 }
